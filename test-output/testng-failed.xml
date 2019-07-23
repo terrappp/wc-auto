@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functional Suite]">
+  <listeners>
+    <listener class-name="utils.Listeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="WC Consultation Test(failed)">
+    <classes>
+      <class name="testcases.WCConsultationFlowTest">
+        <methods>
+          <include name="doConsult" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.WCConsultationFlowTest -->
+    </classes>
+  </test> <!-- WC Consultation Test(failed) -->
+</suite> <!-- Failed suite [Functional Suite] -->

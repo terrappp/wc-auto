@@ -1,0 +1,955 @@
+2019-05-03 01:23:59:310 [Appium] Welcome to Appium v1.12.1
+2019-05-03 01:23:59:312 [Appium] Non-default server args:
+2019-05-03 01:23:59:312 [Appium]   address: 127.0.0.1
+2019-05-03 01:23:59:313 [Appium]   logFile: /home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/logs/Appium.log
+2019-05-03 01:23:59:315 [Appium]   localTimezone: true
+2019-05-03 01:23:59:351 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2019-05-03 01:23:59:463 [HTTP] --> GET /wd/hub/status
+2019-05-03 01:23:59:464 [HTTP] {}
+2019-05-03 01:23:59:467 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2019-05-03 01:23:59:469 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.12.1"}}
+2019-05-03 01:23:59:476 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2019-05-03 01:23:59:477 [HTTP] 
+2019-05-03 01:24:00:381 [HTTP] --> POST /wd/hub/session
+2019-05-03 01:24:00:381 [HTTP] {"desiredCapabilities":{"app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","newCommandTimeout":"300","platformVersion":"5.1.1","platformName":"Android","deviceName":"Android","deviceReadyTimeout":"300"},"capabilities":{"firstMatch":[{"appium:app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appium:appActivity":".SplashScreenActivity","appium:appPackage":"com.project.WhiteCoat","appium:deviceName":"Android","appium:deviceReadyTimeout":"300","appium:newCommandTimeout":"300","platformName":"android","appium:platformVersion":"5.1.1"}]}}
+2019-05-03 01:24:00:383 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","newCommandTimeout":"300","platformVersion":"5.1.1","platformName":"Android","deviceName":"Android","deviceReadyTimeout":"300"},null,{"firstMatch":[{"appium:app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appium:appActivity":".SplashScreenActivity","appium:appPackage":"com.project.WhiteCoat","appium:deviceName":"Android","appium:deviceReadyTimeout":"300","appium:newCommandTimeout":"300","platformName":"android","appium:platformVersion":"5.1.1"}]}]
+2019-05-03 01:24:00:384 [BaseDriver] Event 'newSessionRequested' logged at 1556821440383 (01:24:00 GMT+0700 (Indochina Time))
+2019-05-03 01:24:00:393 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2019-05-03 01:24:00:396 [Appium] DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for Android sessions.
+2019-05-03 01:24:00:396 [Appium] Setting automation to 'UiAutomator1'. 
+2019-05-03 01:24:00:539 [Appium] Appium v1.12.1 creating new AndroidDriver (v4.11.0) session
+2019-05-03 01:24:00:539 [Appium] Capabilities:
+2019-05-03 01:24:00:540 [Appium]   platformName: android
+2019-05-03 01:24:00:540 [Appium]   app: /home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk
+2019-05-03 01:24:00:540 [Appium]   appActivity: .SplashScreenActivity
+2019-05-03 01:24:00:540 [Appium]   appPackage: com.project.WhiteCoat
+2019-05-03 01:24:00:541 [Appium]   deviceName: Android
+2019-05-03 01:24:00:541 [Appium]   deviceReadyTimeout: 300
+2019-05-03 01:24:00:541 [Appium]   newCommandTimeout: 300
+2019-05-03 01:24:00:542 [Appium]   platformVersion: 5.1.1
+2019-05-03 01:24:00:548 [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities {"app":"/home/terra/eclipse... were provided
+2019-05-03 01:24:00:548 [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2019-05-03 01:24:00:550 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2019-05-03 01:24:00:550 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2019-05-03 01:24:00:554 [BaseDriver] Capability 'newCommandTimeout' changed from string ('300') to integer (300). This may cause unexpected behavior
+2019-05-03 01:24:00:554 [BaseDriver] Capability 'deviceReadyTimeout' changed from string ('300') to integer (300). This may cause unexpected behavior
+2019-05-03 01:24:00:559 [BaseDriver] Session created with session id: 347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:00:563 [ADB] Checking whether adb is present
+2019-05-03 01:24:00:613 [ADB] Found 1 'build-tools' folders under '/home/terra/Android/Sdk' (newest first):
+2019-05-03 01:24:00:614 [ADB]     /home/terra/Android/Sdk/build-tools/28.0.3
+2019-05-03 01:24:00:615 [ADB] Using adb from /home/terra/Android/Sdk/platform-tools/adb
+2019-05-03 01:24:00:615 [AndroidDriver] Retrieving device list
+2019-05-03 01:24:00:616 [ADB] Trying to find a connected android device
+2019-05-03 01:24:00:617 [ADB] Getting connected devices...
+2019-05-03 01:24:00:628 [ADB] 1 device(s) connected
+2019-05-03 01:24:00:628 [AndroidDriver] Looking for a device with Android '5.1.1'
+2019-05-03 01:24:00:629 [ADB] Setting device id to 9041f2e6
+2019-05-03 01:24:00:629 [ADB] Getting device platform version
+2019-05-03 01:24:00:631 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell getprop ro.build.version.release'
+2019-05-03 01:24:00:661 [ADB] Current device property 'ro.build.version.release': 5.1.1
+2019-05-03 01:24:00:662 [AndroidDriver] Using device: 9041f2e6
+2019-05-03 01:24:00:664 [ADB] Setting device id to 9041f2e6
+2019-05-03 01:24:00:665 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell getprop ro.build.version.sdk'
+2019-05-03 01:24:00:685 [ADB] Current device property 'ro.build.version.sdk': 22
+2019-05-03 01:24:00:685 [ADB] Device API level: 22
+2019-05-03 01:24:00:693 [BaseDriver] Using local app '/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk'
+2019-05-03 01:24:00:698 [AndroidDriver] Checking whether app is actually present
+2019-05-03 01:24:00:699 [AndroidDriver] Starting Android session
+2019-05-03 01:24:00:702 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 wait-for-device'
+2019-05-03 01:24:00:713 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell echo ping'
+2019-05-03 01:24:00:728 [AndroidDriver] Pushing settings apk to device...
+2019-05-03 01:24:00:730 [ADB] Getting install status for io.appium.settings
+2019-05-03 01:24:00:731 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell dumpsys package io.appium.settings'
+2019-05-03 01:24:00:784 [ADB] 'io.appium.settings' is installed
+2019-05-03 01:24:00:785 [ADB] Getting package info for 'io.appium.settings'
+2019-05-03 01:24:00:786 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell dumpsys package io.appium.settings'
+2019-05-03 01:24:00:836 [ADB] Checking whether aapt is present
+2019-05-03 01:24:00:839 [ADB] Using aapt from /home/terra/Android/Sdk/build-tools/28.0.3/aapt
+2019-05-03 01:24:00:850 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.14.0' >= '2.14.0')
+2019-05-03 01:24:00:850 [ADB] There is no need to install/upgrade '/home/linuxbrew/.linuxbrew/lib/node_modules/appium/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2019-05-03 01:24:00:851 [ADB] Getting IDs of all 'io.appium.settings' processes
+2019-05-03 01:24:00:852 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell 'pgrep --help; echo $?''
+2019-05-03 01:24:00:868 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell 'pidof --help > /dev/null; echo $?''
+2019-05-03 01:24:00:898 [ADB] Using ps-based PID detection
+2019-05-03 01:24:00:899 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell ps'
+2019-05-03 01:24:01:024 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2019-05-03 01:24:01:026 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell settings put secure mock_location 1'
+2019-05-03 01:24:01:614 [Logcat] Starting logcat capture
+2019-05-03 01:24:01:658 [ADB] Getting device platform version
+2019-05-03 01:24:01:659 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell getprop ro.build.version.release'
+2019-05-03 01:24:01:691 [ADB] Current device property 'ro.build.version.release': 5.1.1
+2019-05-03 01:24:01:692 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell wm size'
+2019-05-03 01:24:02:252 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell getprop ro.product.model'
+2019-05-03 01:24:02:274 [ADB] Current device property 'ro.product.model': SM-E500H
+2019-05-03 01:24:02:275 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell getprop ro.product.manufacturer'
+2019-05-03 01:24:02:296 [ADB] Current device property 'ro.product.manufacturer': samsung
+2019-05-03 01:24:02:299 [ADB] Getting install status for com.project.WhiteCoat
+2019-05-03 01:24:02:299 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell dumpsys package com.project.WhiteCoat'
+2019-05-03 01:24:02:341 [ADB] 'com.project.WhiteCoat' is installed
+2019-05-03 01:24:02:342 [ADB] Getting install status for com.project.WhiteCoat
+2019-05-03 01:24:02:344 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell dumpsys package com.project.WhiteCoat'
+2019-05-03 01:24:02:390 [ADB] 'com.project.WhiteCoat' is installed
+2019-05-03 01:24:02:391 [ADB] Getting package info for 'com.project.WhiteCoat'
+2019-05-03 01:24:02:391 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell dumpsys package com.project.WhiteCoat'
+2019-05-03 01:24:02:451 [ADB] The version code of the installed 'com.project.WhiteCoat' is greater than the application version code (109 > 104)
+2019-05-03 01:24:02:451 [ADB] There is no need to install/upgrade '/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk'
+2019-05-03 01:24:02:452 [AndroidDriver] Performing fast reset on 'com.project.WhiteCoat'
+2019-05-03 01:24:02:452 [ADB] Getting install status for com.project.WhiteCoat
+2019-05-03 01:24:02:453 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell dumpsys package com.project.WhiteCoat'
+2019-05-03 01:24:02:489 [ADB] 'com.project.WhiteCoat' is installed
+2019-05-03 01:24:02:490 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell am force-stop com.project.WhiteCoat'
+2019-05-03 01:24:03:058 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell pm clear com.project.WhiteCoat'
+2019-05-03 01:24:03:496 [AndroidDriver] Performed fast reset on the installed 'com.project.WhiteCoat' application (stop and clear)
+2019-05-03 01:24:03:498 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell rm -rf /data/local/tmp/strings.json'
+2019-05-03 01:24:03:523 [AndroidDriver] Extracting strings from apk
+2019-05-03 01:24:03:524 [AndroidDriver] /home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk
+2019-05-03 01:24:03:524 [AndroidDriver] null
+2019-05-03 01:24:03:525 [AndroidDriver] /tmp/com.project.WhiteCoat
+2019-05-03 01:24:03:527 [ADB] Extracting strings from for language: default
+2019-05-03 01:24:03:711 [ADB] Successfully extracted 744 strings from '/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk' resources for '(default)' configuration
+2019-05-03 01:24:03:729 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 push /tmp/com.project.WhiteCoat/strings.json /data/local/tmp'
+2019-05-03 01:24:03:760 [AndroidBootstrap] Watching for bootstrap disconnect
+2019-05-03 01:24:03:761 [ADB] Forwarding system: 4724 to device: 4724
+2019-05-03 01:24:03:762 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 forward tcp\:4724 tcp\:4724'
+2019-05-03 01:24:03:771 [UiAutomator] Starting UiAutomator
+2019-05-03 01:24:03:772 [UiAutomator] Moving to state 'starting'
+2019-05-03 01:24:03:773 [UiAutomator] Parsing uiautomator jar
+2019-05-03 01:24:03:773 [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2019-05-03 01:24:03:774 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 push /home/linuxbrew/.linuxbrew/lib/node_modules/appium/node_modules/appium-android-driver/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+2019-05-03 01:24:03:831 [ADB] Attempting to kill all uiautomator processes
+2019-05-03 01:24:03:833 [ADB] Getting IDs of all 'uiautomator' processes
+2019-05-03 01:24:03:834 [ADB] Using ps-based PID detection
+2019-05-03 01:24:03:835 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell ps'
+2019-05-03 01:24:03:922 [ADB] No 'uiautomator' process has been found
+2019-05-03 01:24:03:923 [UiAutomator] Starting UIAutomator
+2019-05-03 01:24:03:924 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","9041f2e6","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.project.WhiteCoat","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2019-05-03 01:24:04:487 [UiAutomator] Moving to state 'online'
+2019-05-03 01:24:04:491 [AndroidBootstrap] Android bootstrap socket is now connected
+2019-05-03 01:24:04:492 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell dumpsys window'
+2019-05-03 01:24:04:500 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+2019-05-03 01:24:04:500 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2019-05-03 01:24:04:502 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2019-05-03 01:24:04:525 [AndroidDriver] Screen already unlocked, doing nothing
+2019-05-03 01:24:04:528 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell am start -W -n com.project.WhiteCoat/.SplashScreenActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-05-03 01:24:06:086 [Appium] New AndroidDriver session created successfully, session 347846c4-9647-422e-b2e1-b9e2e339583d added to master session list
+2019-05-03 01:24:06:088 [BaseDriver] Event 'newSessionStarted' logged at 1556821446088 (01:24:06 GMT+0700 (Indochina Time))
+2019-05-03 01:24:06:092 [W3C (347846c4)] Cached the protocol value 'W3C' for the new session 347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:06:093 [W3C (347846c4)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}}
+2019-05-03 01:24:06:096 [HTTP] <-- POST /wd/hub/session 200 5714 ms - 1020
+2019-05-03 01:24:06:096 [HTTP] 
+2019-05-03 01:24:06:155 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:06:155 [HTTP] {}
+2019-05-03 01:24:06:156 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:06:176 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:06:178 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 22 ms - 952
+2019-05-03 01:24:06:178 [HTTP] 
+2019-05-03 01:24:06:186 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:06:186 [HTTP] {}
+2019-05-03 01:24:06:187 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:06:189 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:06:190 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 4 ms - 952
+2019-05-03 01:24:06:190 [HTTP] 
+2019-05-03 01:24:06:199 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/timeouts
+2019-05-03 01:24:06:199 [HTTP] {"implicit":20000}
+2019-05-03 01:24:06:200 [W3C (347846c4)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,20000,"347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:06:202 [BaseDriver] W3C timeout argument: {"implicit":20000}}
+2019-05-03 01:24:06:203 [BaseDriver] Set implicit wait to 20000ms
+2019-05-03 01:24:06:204 [W3C (347846c4)] Responding to client with driver.timeouts() result: null
+2019-05-03 01:24:06:206 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/timeouts 200 6 ms - 14
+2019-05-03 01:24:06:206 [HTTP] 
+2019-05-03 01:24:06:258 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:06:259 [HTTP] {}
+2019-05-03 01:24:06:259 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:06:260 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:06:261 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:06:262 [HTTP] 
+2019-05-03 01:24:06:265 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:06:265 [HTTP] {}
+2019-05-03 01:24:06:265 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:06:267 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:06:268 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:06:268 [HTTP] 
+2019-05-03 01:24:06:421 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:06:422 [HTTP] {}
+2019-05-03 01:24:06:422 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:06:424 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:06:425 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:06:425 [HTTP] 
+2019-05-03 01:24:06:455 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:06:455 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/txtEmail"}
+2019-05-03 01:24:06:457 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/txtEmail","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:06:459 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:06:460 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:06:461 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:06:465 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:06:465 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:06:465 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:06:466 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:06:467 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:06:472 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-05-03 01:24:06:473 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:06:473 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:06:475 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-05-03 01:24:06:476 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:06:476 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-03 01:24:06:493 [BaseDriver] Waited for 33 ms so far
+2019-05-03 01:24:06:996 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:06:999 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:07:000 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:07:001 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:07:002 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:07:003 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:07:011 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-05-03 01:24:07:013 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:07:013 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:07:021 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-05-03 01:24:07:022 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:07:023 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-03 01:24:07:025 [BaseDriver] Waited for 564 ms so far
+2019-05-03 01:24:07:526 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:07:529 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:07:530 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:07:531 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:07:532 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:07:532 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:07:539 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-05-03 01:24:07:539 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:07:540 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:07:548 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-05-03 01:24:07:549 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:07:549 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-03 01:24:07:550 [BaseDriver] Waited for 1090 ms so far
+2019-05-03 01:24:08:051 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:08:054 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:08:055 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:08:056 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:08:056 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:08:057 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:08:064 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-05-03 01:24:08:065 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:08:065 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:08:075 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:08:076 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-03 01:24:08:078 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-05-03 01:24:08:079 [BaseDriver] Waited for 1619 ms so far
+2019-05-03 01:24:08:580 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:08:586 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:08:587 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:08:588 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:08:588 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:08:589 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:08:595 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-05-03 01:24:08:596 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:08:597 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:08:610 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-05-03 01:24:08:611 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:08:611 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-03 01:24:08:613 [BaseDriver] Waited for 2153 ms so far
+2019-05-03 01:24:09:114 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:09:118 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:09:119 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:09:120 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:09:120 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:09:121 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:09:128 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-05-03 01:24:09:128 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:09:129 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:09:143 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:09:144 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-03 01:24:09:146 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-05-03 01:24:09:147 [BaseDriver] Waited for 2687 ms so far
+2019-05-03 01:24:09:648 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:09:660 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtEmail","context":"","multiple":false}}
+2019-05-03 01:24:09:660 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:09:660 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:09:660 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtEmail' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:09:661 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtEmail]
+2019-05-03 01:24:09:732 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2019-05-03 01:24:09:733 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:09:735 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"1","ELEMENT":"1"}
+2019-05-03 01:24:09:737 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 3281 ms - 67
+2019-05-03 01:24:09:737 [HTTP] 
+2019-05-03 01:24:09:753 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/1/value
+2019-05-03 01:24:09:753 [HTTP] {"id":"1","text":"phuoc.tran@whitecoat.global","value":["p","h","u","o","c",".","t","r","a","n","@","w","h","i","t","e","c","o","a","t",".","g","l","o","b","a","l"]}
+2019-05-03 01:24:09:755 [W3C (347846c4)] Calling AppiumDriver.setValue() with args: [["p","h","u","o","c",".","t","r","a","n","@","w","h","i","t","e","c","o","a","t",".","g","l","o","b","a","l"],"1","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:09:756 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"1","text":"phuoc.tran@whitecoat.global","replace":false}}
+2019-05-03 01:24:09:769 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"1","text":"phuoc.tran@whitecoat.global","replace":false}}
+2019-05-03 01:24:09:769 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:09:770 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+2019-05-03 01:24:09:770 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 1
+2019-05-03 01:24:10:252 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+2019-05-03 01:24:13:050 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: phuoc.tran@whitecoat.global
+2019-05-03 01:24:16:954 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:16:958 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:16:960 [W3C (347846c4)] Responding to client with driver.setValue() result: true
+2019-05-03 01:24:16:962 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/1/value 200 7208 ms - 14
+2019-05-03 01:24:16:963 [HTTP] 
+2019-05-03 01:24:16:968 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:16:968 [HTTP] {}
+2019-05-03 01:24:16:969 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:16:971 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:16:972 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 4 ms - 952
+2019-05-03 01:24:16:972 [HTTP] 
+2019-05-03 01:24:16:977 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:16:978 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/txtPassword"}
+2019-05-03 01:24:16:978 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/txtPassword","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:16:979 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:16:980 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:16:980 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtPassword","context":"","multiple":false}}
+2019-05-03 01:24:16:982 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/txtPassword","context":"","multiple":false}}
+2019-05-03 01:24:16:983 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:16:983 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:16:983 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/txtPassword' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:16:984 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/txtPassword]
+2019-05-03 01:24:17:476 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+2019-05-03 01:24:17:478 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:17:480 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"2","ELEMENT":"2"}
+2019-05-03 01:24:17:486 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 503 ms - 67
+2019-05-03 01:24:17:487 [HTTP] 
+2019-05-03 01:24:17:488 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/2/value
+2019-05-03 01:24:17:489 [HTTP] {"id":"2","text":"test1234","value":["t","e","s","t","1","2","3","4"]}
+2019-05-03 01:24:17:489 [W3C (347846c4)] Calling AppiumDriver.setValue() with args: [["t","e","s","t","1","2","3","4"],"2","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:17:490 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"2","text":"test1234","replace":false}}
+2019-05-03 01:24:17:493 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"2","text":"test1234","replace":false}}
+2019-05-03 01:24:17:498 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:17:498 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+2019-05-03 01:24:17:499 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 2
+2019-05-03 01:24:17:520 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+2019-05-03 01:24:20:266 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: test1234
+2019-05-03 01:24:23:001 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:23:002 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:23:003 [W3C (347846c4)] Responding to client with driver.setValue() result: true
+2019-05-03 01:24:23:004 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/2/value 200 5515 ms - 14
+2019-05-03 01:24:23:005 [HTTP] 
+2019-05-03 01:24:23:030 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/appium/device/press_keycode
+2019-05-03 01:24:23:031 [HTTP] {"keycode":4}
+2019-05-03 01:24:23:034 [W3C (347846c4)] Calling AppiumDriver.pressKeyCode() with args: [4,null,null,null,null,"347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:23:035 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressKeyCode","params":{"keycode":4,"metastate":null}}
+2019-05-03 01:24:23:037 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressKeyCode","params":{"keycode":4,"metastate":null}}
+2019-05-03 01:24:23:038 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:23:038 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressKeyCode
+2019-05-03 01:24:23:561 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:23:562 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:23:563 [W3C (347846c4)] Responding to client with driver.pressKeyCode() result: true
+2019-05-03 01:24:23:565 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/appium/device/press_keycode 200 534 ms - 14
+2019-05-03 01:24:23:566 [HTTP] 
+2019-05-03 01:24:23:571 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:23:572 [HTTP] {}
+2019-05-03 01:24:23:572 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:23:576 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:23:578 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 5 ms - 952
+2019-05-03 01:24:23:578 [HTTP] 
+2019-05-03 01:24:23:584 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:23:585 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblLogIn"}
+2019-05-03 01:24:23:585 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblLogIn","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:23:586 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:23:587 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:23:587 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblLogIn","context":"","multiple":false}}
+2019-05-03 01:24:23:590 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblLogIn","context":"","multiple":false}}
+2019-05-03 01:24:23:590 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:23:591 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:23:591 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblLogIn' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:23:591 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblLogIn]
+2019-05-03 01:24:23:621 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+2019-05-03 01:24:23:622 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:23:623 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"3","ELEMENT":"3"}
+2019-05-03 01:24:23:626 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 40 ms - 67
+2019-05-03 01:24:23:627 [HTTP] 
+2019-05-03 01:24:23:635 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/3/click
+2019-05-03 01:24:23:636 [HTTP] {"id":"3"}
+2019-05-03 01:24:23:636 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["3","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:23:638 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+2019-05-03 01:24:23:646 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+2019-05-03 01:24:23:647 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:23:647 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:23:928 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:23:935 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:23:937 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:23:940 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/3/click 200 303 ms - 14
+2019-05-03 01:24:23:940 [HTTP] 
+2019-05-03 01:24:23:951 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:23:952 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblMySelf"}
+2019-05-03 01:24:23:952 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblMySelf","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:23:953 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:23:954 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:23:954 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblMySelf","context":"","multiple":false}}
+2019-05-03 01:24:23:957 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblMySelf","context":"","multiple":false}}
+2019-05-03 01:24:23:958 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:23:958 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:23:959 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblMySelf' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:23:959 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblMySelf]
+2019-05-03 01:24:25:575 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+2019-05-03 01:24:25:578 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:25:580 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"4","ELEMENT":"4"}
+2019-05-03 01:24:25:582 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 1629 ms - 67
+2019-05-03 01:24:25:582 [HTTP] 
+2019-05-03 01:24:25:586 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/4/displayed
+2019-05-03 01:24:25:587 [HTTP] {}
+2019-05-03 01:24:25:588 [W3C (347846c4)] Calling AppiumDriver.elementDisplayed() with args: ["4","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:591 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"4"}}
+2019-05-03 01:24:25:594 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"4"}}
+2019-05-03 01:24:25:594 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:25:595 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+2019-05-03 01:24:25:620 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"true"}
+2019-05-03 01:24:25:621 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:25:622 [W3C (347846c4)] Responding to client with driver.elementDisplayed() result: true
+2019-05-03 01:24:25:624 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/4/displayed 200 37 ms - 14
+2019-05-03 01:24:25:624 [HTTP] 
+2019-05-03 01:24:25:628 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/4/text
+2019-05-03 01:24:25:629 [HTTP] {}
+2019-05-03 01:24:25:630 [W3C (347846c4)] Calling AppiumDriver.getText() with args: ["4","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:632 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"4"}}
+2019-05-03 01:24:25:635 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"4"}}
+2019-05-03 01:24:25:635 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:25:636 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+2019-05-03 01:24:25:665 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"Myself"}
+2019-05-03 01:24:25:665 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:25:666 [W3C (347846c4)] Responding to client with driver.getText() result: "Myself"
+2019-05-03 01:24:25:667 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/4/text 200 39 ms - 18
+2019-05-03 01:24:25:668 [HTTP] 
+2019-05-03 01:24:25:681 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:25:682 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblChild"}
+2019-05-03 01:24:25:683 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblChild","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:684 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:25:684 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:25:685 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblChild","context":"","multiple":false}}
+2019-05-03 01:24:25:689 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblChild","context":"","multiple":false}}
+2019-05-03 01:24:25:689 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:25:690 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:25:690 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblChild' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:25:690 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblChild]
+2019-05-03 01:24:25:719 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"5"}}
+2019-05-03 01:24:25:719 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:25:720 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5","ELEMENT":"5"}
+2019-05-03 01:24:25:722 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 40 ms - 67
+2019-05-03 01:24:25:723 [HTTP] 
+2019-05-03 01:24:25:727 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/5/displayed
+2019-05-03 01:24:25:728 [HTTP] {}
+2019-05-03 01:24:25:728 [W3C (347846c4)] Calling AppiumDriver.elementDisplayed() with args: ["5","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:730 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"5"}}
+2019-05-03 01:24:25:733 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"5"}}
+2019-05-03 01:24:25:733 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:25:734 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+2019-05-03 01:24:25:763 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"true"}
+2019-05-03 01:24:25:764 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:25:765 [W3C (347846c4)] Responding to client with driver.elementDisplayed() result: true
+2019-05-03 01:24:25:768 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/5/displayed 200 40 ms - 14
+2019-05-03 01:24:25:769 [HTTP] 
+2019-05-03 01:24:25:772 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/5/text
+2019-05-03 01:24:25:773 [HTTP] {}
+2019-05-03 01:24:25:774 [W3C (347846c4)] Calling AppiumDriver.getText() with args: ["5","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:775 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"5"}}
+2019-05-03 01:24:25:778 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"5"}}
+2019-05-03 01:24:25:778 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:25:779 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+2019-05-03 01:24:25:806 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"My Child"}
+2019-05-03 01:24:25:807 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:25:808 [W3C (347846c4)] Responding to client with driver.getText() result: "My Child"
+2019-05-03 01:24:25:809 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/5/text 200 37 ms - 20
+2019-05-03 01:24:25:810 [HTTP] 
+2019-05-03 01:24:25:814 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:25:814 [HTTP] {}
+2019-05-03 01:24:25:815 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:816 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:25:817 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 4 ms - 952
+2019-05-03 01:24:25:818 [HTTP] 
+2019-05-03 01:24:25:821 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:25:821 [HTTP] {}
+2019-05-03 01:24:25:821 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:823 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:25:825 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:25:825 [HTTP] 
+2019-05-03 01:24:25:831 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:25:831 [HTTP] {}
+2019-05-03 01:24:25:832 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:834 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:25:835 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 4 ms - 952
+2019-05-03 01:24:25:836 [HTTP] 
+2019-05-03 01:24:25:846 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:25:846 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblMySelf"}
+2019-05-03 01:24:25:847 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblMySelf","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:848 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:25:849 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:25:849 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblMySelf","context":"","multiple":false}}
+2019-05-03 01:24:25:853 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblMySelf","context":"","multiple":false}}
+2019-05-03 01:24:25:853 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:25:854 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:25:854 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblMySelf' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:25:854 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblMySelf]
+2019-05-03 01:24:25:876 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"6"}}
+2019-05-03 01:24:25:877 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:25:878 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"6","ELEMENT":"6"}
+2019-05-03 01:24:25:880 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 33 ms - 67
+2019-05-03 01:24:25:880 [HTTP] 
+2019-05-03 01:24:25:887 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/6/click
+2019-05-03 01:24:25:887 [HTTP] {"id":"6"}
+2019-05-03 01:24:25:888 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["6","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:25:889 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"6"}}
+2019-05-03 01:24:25:893 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"6"}}
+2019-05-03 01:24:25:893 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:25:894 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:26:411 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:26:412 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:26:414 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:26:417 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/6/click 200 528 ms - 14
+2019-05-03 01:24:26:418 [HTTP] 
+2019-05-03 01:24:26:421 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:26:421 [HTTP] {}
+2019-05-03 01:24:26:422 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:26:423 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:26:424 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:26:425 [HTTP] 
+2019-05-03 01:24:26:428 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:26:428 [HTTP] {}
+2019-05-03 01:24:26:429 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:26:431 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:26:432 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 4 ms - 952
+2019-05-03 01:24:26:432 [HTTP] 
+2019-05-03 01:24:26:436 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:26:437 [HTTP] {}
+2019-05-03 01:24:26:437 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:26:439 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:26:440 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:26:446 [HTTP] 
+2019-05-03 01:24:26:447 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:26:448 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblOK"}
+2019-05-03 01:24:26:448 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblOK","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:26:450 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:26:450 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:26:451 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblOK","context":"","multiple":false}}
+2019-05-03 01:24:26:457 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblOK","context":"","multiple":false}}
+2019-05-03 01:24:26:457 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:26:458 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:26:458 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblOK' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:26:458 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblOK]
+2019-05-03 01:24:27:817 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"7"}}
+2019-05-03 01:24:27:818 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:27:820 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"7","ELEMENT":"7"}
+2019-05-03 01:24:27:821 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 1373 ms - 67
+2019-05-03 01:24:27:822 [HTTP] 
+2019-05-03 01:24:27:828 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/7/click
+2019-05-03 01:24:27:829 [HTTP] {"id":"7"}
+2019-05-03 01:24:27:829 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["7","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:27:830 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"7"}}
+2019-05-03 01:24:27:833 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"7"}}
+2019-05-03 01:24:27:834 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:27:834 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:28:503 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:28:504 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:28:505 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:28:507 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/7/click 200 678 ms - 14
+2019-05-03 01:24:28:508 [HTTP] 
+2019-05-03 01:24:28:514 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:28:515 [HTTP] {}
+2019-05-03 01:24:28:516 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:28:519 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:28:520 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 7 ms - 952
+2019-05-03 01:24:28:521 [HTTP] 
+2019-05-03 01:24:28:524 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:28:524 [HTTP] {}
+2019-05-03 01:24:28:524 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:28:526 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:28:528 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 5 ms - 952
+2019-05-03 01:24:28:529 [HTTP] 
+2019-05-03 01:24:28:545 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:28:545 [HTTP] {"using":"-android uiautomator","value":"textContains(\"Flu\")"}
+2019-05-03 01:24:28:545 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["-android uiautomator","textContains(\"Flu\")","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:28:546 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:28:546 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:28:547 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"textContains(\"Flu\")","context":"","multiple":false}}
+2019-05-03 01:24:28:552 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"textContains(\"Flu\")","context":"","multiple":false}}
+2019-05-03 01:24:28:552 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:28:552 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:28:552 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textContains("Flu")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+2019-05-03 01:24:28:553 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: textContains("Flu")
+2019-05-03 01:24:28:553 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Flu"
+2019-05-03 01:24:28:553 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Flu]
+2019-05-03 01:24:29:657 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"8"}}
+2019-05-03 01:24:29:658 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:29:659 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"8","ELEMENT":"8"}
+2019-05-03 01:24:29:661 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 1116 ms - 67
+2019-05-03 01:24:29:662 [HTTP] 
+2019-05-03 01:24:29:669 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/8/click
+2019-05-03 01:24:29:669 [HTTP] {"id":"8"}
+2019-05-03 01:24:29:669 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["8","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:29:671 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"8"}}
+2019-05-03 01:24:29:673 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"8"}}
+2019-05-03 01:24:29:673 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:29:674 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:29:827 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:29:828 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:29:829 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:29:830 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/8/click 200 161 ms - 14
+2019-05-03 01:24:29:831 [HTTP] 
+2019-05-03 01:24:29:836 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:29:836 [HTTP] {"using":"-android uiautomator","value":"textContains(\"Fever\")"}
+2019-05-03 01:24:29:837 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["-android uiautomator","textContains(\"Fever\")","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:29:838 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:29:839 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:29:839 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"textContains(\"Fever\")","context":"","multiple":false}}
+2019-05-03 01:24:29:843 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"textContains(\"Fever\")","context":"","multiple":false}}
+2019-05-03 01:24:29:843 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:29:843 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:29:844 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textContains("Fever")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+2019-05-03 01:24:29:844 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: textContains("Fever")
+2019-05-03 01:24:29:844 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Fever"
+2019-05-03 01:24:29:845 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Fever]
+2019-05-03 01:24:30:441 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"9"}}
+2019-05-03 01:24:30:442 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:30:444 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"9","ELEMENT":"9"}
+2019-05-03 01:24:30:445 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 609 ms - 67
+2019-05-03 01:24:30:446 [HTTP] 
+2019-05-03 01:24:30:453 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/9/click
+2019-05-03 01:24:30:453 [HTTP] {"id":"9"}
+2019-05-03 01:24:30:454 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["9","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:30:456 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"9"}}
+2019-05-03 01:24:30:458 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"9"}}
+2019-05-03 01:24:30:459 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:30:459 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:30:616 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:30:617 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:30:618 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:30:619 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/9/click 200 166 ms - 14
+2019-05-03 01:24:30:619 [HTTP] 
+2019-05-03 01:24:30:626 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:30:627 [HTTP] {"using":"-android uiautomator","value":"textContains(\"Diarrhoea\")"}
+2019-05-03 01:24:30:628 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["-android uiautomator","textContains(\"Diarrhoea\")","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:30:629 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:30:630 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:30:631 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"textContains(\"Diarrhoea\")","context":"","multiple":false}}
+2019-05-03 01:24:30:634 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"textContains(\"Diarrhoea\")","context":"","multiple":false}}
+2019-05-03 01:24:30:638 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:30:639 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:30:639 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textContains("Diarrhoea")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+2019-05-03 01:24:30:639 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: textContains("Diarrhoea")
+2019-05-03 01:24:30:641 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Diarrhoea"
+2019-05-03 01:24:30:641 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Diarrhoea]
+2019-05-03 01:24:31:121 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"10"}}
+2019-05-03 01:24:31:122 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:31:123 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"10","ELEMENT":"10"}
+2019-05-03 01:24:31:125 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 498 ms - 69
+2019-05-03 01:24:31:126 [HTTP] 
+2019-05-03 01:24:31:131 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/10/click
+2019-05-03 01:24:31:132 [HTTP] {"id":"10"}
+2019-05-03 01:24:31:133 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["10","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:31:134 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"10"}}
+2019-05-03 01:24:31:139 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"10"}}
+2019-05-03 01:24:31:140 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:31:140 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:31:331 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:31:332 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:31:334 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:31:335 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/10/click 200 203 ms - 14
+2019-05-03 01:24:31:336 [HTTP] 
+2019-05-03 01:24:31:343 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:31:344 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblNext"}
+2019-05-03 01:24:31:345 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblNext","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:31:346 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:31:347 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:31:347 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblNext","context":"","multiple":false}}
+2019-05-03 01:24:31:349 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblNext","context":"","multiple":false}}
+2019-05-03 01:24:31:350 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:31:350 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:31:350 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblNext' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:31:350 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblNext]
+2019-05-03 01:24:31:848 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"11"}}
+2019-05-03 01:24:31:849 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:31:851 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"11","ELEMENT":"11"}
+2019-05-03 01:24:31:852 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 509 ms - 69
+2019-05-03 01:24:31:853 [HTTP] 
+2019-05-03 01:24:31:859 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/11/click
+2019-05-03 01:24:31:860 [HTTP] {"id":"11"}
+2019-05-03 01:24:31:861 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["11","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:31:862 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"11"}}
+2019-05-03 01:24:31:865 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"11"}}
+2019-05-03 01:24:31:865 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:31:865 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:32:056 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:32:057 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:32:058 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:32:060 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/11/click 200 200 ms - 14
+2019-05-03 01:24:32:061 [HTTP] 
+2019-05-03 01:24:32:064 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:32:065 [HTTP] {}
+2019-05-03 01:24:32:065 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:32:067 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:32:069 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 4 ms - 952
+2019-05-03 01:24:32:069 [HTTP] 
+2019-05-03 01:24:32:072 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:32:073 [HTTP] {}
+2019-05-03 01:24:32:073 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:32:075 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:32:076 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:32:076 [HTTP] 
+2019-05-03 01:24:32:080 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:32:080 [HTTP] {}
+2019-05-03 01:24:32:080 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:32:082 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:32:083 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:32:083 [HTTP] 
+2019-05-03 01:24:32:087 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:32:088 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblSkip"}
+2019-05-03 01:24:32:088 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblSkip","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:32:089 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:32:089 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:32:090 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblSkip","context":"","multiple":false}}
+2019-05-03 01:24:32:092 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblSkip","context":"","multiple":false}}
+2019-05-03 01:24:32:092 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:32:093 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:32:093 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblSkip' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:32:093 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblSkip]
+2019-05-03 01:24:32:850 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"12"}}
+2019-05-03 01:24:32:851 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:32:852 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"12","ELEMENT":"12"}
+2019-05-03 01:24:32:855 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 766 ms - 69
+2019-05-03 01:24:32:856 [HTTP] 
+2019-05-03 01:24:32:862 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/12/click
+2019-05-03 01:24:32:863 [HTTP] {"id":"12"}
+2019-05-03 01:24:32:863 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["12","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:32:865 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"12"}}
+2019-05-03 01:24:32:867 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"12"}}
+2019-05-03 01:24:32:868 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:32:868 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:33:020 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:33:021 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:33:023 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:33:027 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/12/click 200 163 ms - 14
+2019-05-03 01:24:33:028 [HTTP] 
+2019-05-03 01:24:33:032 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:33:032 [HTTP] {}
+2019-05-03 01:24:33:033 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:33:035 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:33:037 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 4 ms - 952
+2019-05-03 01:24:33:037 [HTTP] 
+2019-05-03 01:24:33:040 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:33:040 [HTTP] {}
+2019-05-03 01:24:33:041 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:33:043 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:33:045 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 5 ms - 952
+2019-05-03 01:24:33:046 [HTTP] 
+2019-05-03 01:24:33:052 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:33:052 [HTTP] {}
+2019-05-03 01:24:33:053 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:33:055 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:33:057 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 5 ms - 952
+2019-05-03 01:24:33:058 [HTTP] 
+2019-05-03 01:24:33:063 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:33:064 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblSkip"}
+2019-05-03 01:24:33:065 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblSkip","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:33:066 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:33:067 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:33:067 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblSkip","context":"","multiple":false}}
+2019-05-03 01:24:33:070 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblSkip","context":"","multiple":false}}
+2019-05-03 01:24:33:070 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:33:071 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:33:071 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblSkip' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:33:071 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblSkip]
+2019-05-03 01:24:33:810 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"13"}}
+2019-05-03 01:24:33:812 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:33:813 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"13","ELEMENT":"13"}
+2019-05-03 01:24:33:815 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 751 ms - 69
+2019-05-03 01:24:33:816 [HTTP] 
+2019-05-03 01:24:33:823 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/13/click
+2019-05-03 01:24:33:823 [HTTP] {"id":"13"}
+2019-05-03 01:24:33:823 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["13","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:33:825 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"13"}}
+2019-05-03 01:24:33:829 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"13"}}
+2019-05-03 01:24:33:829 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:33:830 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:34:034 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:34:035 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:34:035 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:34:037 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/13/click 200 214 ms - 14
+2019-05-03 01:24:34:037 [HTTP] 
+2019-05-03 01:24:34:041 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:34:042 [HTTP] {}
+2019-05-03 01:24:34:043 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:34:045 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:34:046 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 5 ms - 952
+2019-05-03 01:24:34:047 [HTTP] 
+2019-05-03 01:24:34:049 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:34:050 [HTTP] {}
+2019-05-03 01:24:34:050 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:34:052 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:34:053 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:34:053 [HTTP] 
+2019-05-03 01:24:34:057 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:34:058 [HTTP] {}
+2019-05-03 01:24:34:058 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:34:060 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:34:061 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:34:062 [HTTP] 
+2019-05-03 01:24:34:066 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:34:066 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/G6PDOptionLayout"}
+2019-05-03 01:24:34:067 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/G6PDOptionLayout","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:34:068 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:34:069 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:34:069 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/G6PDOptionLayout","context":"","multiple":false}}
+2019-05-03 01:24:34:072 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/G6PDOptionLayout","context":"","multiple":false}}
+2019-05-03 01:24:34:072 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:34:072 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:34:074 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/G6PDOptionLayout' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:34:074 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/G6PDOptionLayout]
+2019-05-03 01:24:34:817 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"14"}}
+2019-05-03 01:24:34:818 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:34:820 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"14","ELEMENT":"14"}
+2019-05-03 01:24:34:821 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 755 ms - 69
+2019-05-03 01:24:34:822 [HTTP] 
+2019-05-03 01:24:34:828 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/14/click
+2019-05-03 01:24:34:828 [HTTP] {"id":"14"}
+2019-05-03 01:24:34:829 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["14","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:34:830 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"14"}}
+2019-05-03 01:24:34:832 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"14"}}
+2019-05-03 01:24:34:833 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:34:833 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:37:981 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:37:982 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:37:983 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:37:985 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/14/click 200 3156 ms - 14
+2019-05-03 01:24:37:986 [HTTP] 
+2019-05-03 01:24:37:989 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:37:990 [HTTP] {}
+2019-05-03 01:24:37:990 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:37:994 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:37:995 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 5 ms - 952
+2019-05-03 01:24:37:996 [HTTP] 
+2019-05-03 01:24:38:000 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:38:000 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblSelectDoctor"}
+2019-05-03 01:24:38:001 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblSelectDoctor","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:38:004 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:38:004 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:38:004 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblSelectDoctor","context":"","multiple":false}}
+2019-05-03 01:24:38:007 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblSelectDoctor","context":"","multiple":false}}
+2019-05-03 01:24:38:007 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:38:008 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:38:008 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblSelectDoctor' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:38:008 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblSelectDoctor]
+2019-05-03 01:24:38:026 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"15"}}
+2019-05-03 01:24:38:027 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:38:028 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"15","ELEMENT":"15"}
+2019-05-03 01:24:38:030 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 29 ms - 69
+2019-05-03 01:24:38:031 [HTTP] 
+2019-05-03 01:24:38:036 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/15/click
+2019-05-03 01:24:38:037 [HTTP] {"id":"15"}
+2019-05-03 01:24:38:037 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["15","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:38:039 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"15"}}
+2019-05-03 01:24:38:042 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"15"}}
+2019-05-03 01:24:38:042 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:38:043 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:38:322 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:38:324 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:38:325 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:38:327 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/15/click 200 290 ms - 14
+2019-05-03 01:24:38:328 [HTTP] 
+2019-05-03 01:24:38:333 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:38:333 [HTTP] {}
+2019-05-03 01:24:38:334 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:38:335 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:38:336 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:38:336 [HTTP] 
+2019-05-03 01:24:38:338 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:38:338 [HTTP] {}
+2019-05-03 01:24:38:339 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:38:340 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:38:342 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 4 ms - 952
+2019-05-03 01:24:38:343 [HTTP] 
+2019-05-03 01:24:38:346 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:38:346 [HTTP] {}
+2019-05-03 01:24:38:346 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:38:348 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:38:349 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:38:350 [HTTP] 
+2019-05-03 01:24:38:354 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element
+2019-05-03 01:24:38:354 [HTTP] {"using":"id","value":"com.project.WhiteCoat:id/lblOK"}
+2019-05-03 01:24:38:355 [W3C (347846c4)] Calling AppiumDriver.findElement() with args: ["id","com.project.WhiteCoat:id/lblOK","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:38:356 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-03 01:24:38:357 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-03 01:24:38:357 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblOK","context":"","multiple":false}}
+2019-05-03 01:24:38:361 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.project.WhiteCoat:id/lblOK","context":"","multiple":false}}
+2019-05-03 01:24:38:361 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:38:362 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-05-03 01:24:38:362 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.project.WhiteCoat:id/lblOK' using 'ID' with the contextId: '' multiple: false
+2019-05-03 01:24:38:362 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.project.WhiteCoat:id/lblOK]
+2019-05-03 01:24:39:604 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"16"}}
+2019-05-03 01:24:39:606 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:39:607 [W3C (347846c4)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"16","ELEMENT":"16"}
+2019-05-03 01:24:39:609 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element 200 1254 ms - 69
+2019-05-03 01:24:39:610 [HTTP] 
+2019-05-03 01:24:39:617 [HTTP] --> POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/16/click
+2019-05-03 01:24:39:618 [HTTP] {"id":"16"}
+2019-05-03 01:24:39:618 [W3C (347846c4)] Calling AppiumDriver.click() with args: ["16","347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:39:619 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"16"}}
+2019-05-03 01:24:39:622 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"16"}}
+2019-05-03 01:24:39:622 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-05-03 01:24:39:623 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-05-03 01:24:40:079 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-05-03 01:24:40:080 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:40:082 [W3C (347846c4)] Responding to client with driver.click() result: true
+2019-05-03 01:24:40:083 [HTTP] <-- POST /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/element/16/click 200 465 ms - 14
+2019-05-03 01:24:40:084 [HTTP] 
+2019-05-03 01:24:40:086 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:40:087 [HTTP] {}
+2019-05-03 01:24:40:087 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:40:089 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:40:090 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:40:090 [HTTP] 
+2019-05-03 01:24:40:092 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:40:092 [HTTP] {}
+2019-05-03 01:24:40:093 [W3C (347846c4)] Calling AppiumDriver.getSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:40:094 [W3C (347846c4)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"Android","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1"},"platformName":"android","app":"/home/terra/eclipse-workspace/AppiumTestNG_WC_Android/src/test/resources/app/whitecoat-QA-1.0.36(104).apk","appActivity":".SplashScreenActivity","appPackage":"com.project.WhiteCoat","deviceName":"9041f2e6","deviceReadyTimeout":300,"newCommandTimeout":300,"platformVersion":"5.1.1","deviceUDID":"9041f2e6","deviceScreenSize":"720x1280","deviceModel":"SM-E500H","deviceManufacturer":"samsung"}
+2019-05-03 01:24:40:095 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 3 ms - 952
+2019-05-03 01:24:40:096 [HTTP] 
+2019-05-03 01:24:40:108 [HTTP] --> GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/screenshot
+2019-05-03 01:24:40:108 [HTTP] {}
+2019-05-03 01:24:40:109 [W3C (347846c4)] Calling AppiumDriver.getScreenshot() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:40:923 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell dumpsys input'
+2019-05-03 01:24:41:600 [W3C (347846c4)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAtIAAAUCCAYAAAAn8xQLAAA3v0lEQVR4AezBCZDf9WEf7M/vq/9qD+0hrS4QEikYDHYlDD6w8YloXsDB56Rxicety7hNPXY7nUzvTCd1M3GajKdxnZlm0pmOxyTugDt2EjtgkGsbGx/CiXwiJAtkZHHpAGklpN3Vanf/v7f/vrN9FUWAvoATkJ7naTZt2tQGAAA4Ldddd12T/60EAACoVgIAAFQrAQAAqpUAAADVSgAAgGolAABAtRIAAKBaCQAAUK0EAACoVgIAAFQrAQAAqpUAAADVSgAAgGolAABAtRIAAKBaCQAAUK0EAACoVgIAAFQrAQAAqpUAAADVSgAAgGolAABAtRIAAKBaCQAAUK0EAACoVgIAAFQrAQAAqpUAAADVSgAAgGolAABAtU4AADjjzXXbHD02nz2HjuXw1Fz6+0pWji7O+FBfBvsXpQm1OgEA4Ix2dGY+39hxMHsPzWRmtpsFTZOMDfblsvNH8vLzhkOdTjht3bbN7iemc2R6Li9ZvSRL+hcFAOCF7MixuXzxB49nYnI2J2vb5NDUbO7+8cHMzHXzivNHUpomnJ4STku3bfPA3ql8ffvBfPuBQ/nKfQcyfbwbAIAXsj/feTiHpmazoDTJ2GAnA30lJ/rB7ifz+JPHw+nrhGfUbdvs3DeVzQ9M5NhsNz37Ds9kYnI2g4v7AwDwQvT4kzN5YN9kFiwb6ss1f3t5Vowuzvx8my27DudHDz2ZbpvMzHZz3yNHs2q0P00TTkMnPK1u2+aBvVO5Z+dEjs12s2D92pGsXro4AAAvBHPzbR4+cCyTx+ez4NGD01nQ3yl588vGs3J0cXo6i5pc+ZKxTM7MZefeqbRJdh+YztZHjqRpmjzfBheXnL98MH2LmpwpOuEpdds2O/dNZfMDEzk2203PotJk/bqRXHXR0gAAvFD8YPeT2bLrcJ7KUP+iLB3q5ESlaXLhyqE8sHcqPTOz3Xzr/on8LDRJLvu50Vx10dKc...
+2019-05-03 01:24:41:601 [HTTP] <-- GET /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d/screenshot 200 1493 ms - 19116
+2019-05-03 01:24:41:601 [HTTP] 
+2019-05-03 01:24:41:635 [HTTP] --> DELETE /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d
+2019-05-03 01:24:41:636 [HTTP] {}
+2019-05-03 01:24:41:636 [W3C (347846c4)] Calling AppiumDriver.deleteSession() with args: ["347846c4-9647-422e-b2e1-b9e2e339583d"]
+2019-05-03 01:24:41:636 [BaseDriver] Event 'quitSessionRequested' logged at 1556821481636 (01:24:41 GMT+0700 (Indochina Time))
+2019-05-03 01:24:41:637 [Appium] Removing session 347846c4-9647-422e-b2e1-b9e2e339583d from our master session list
+2019-05-03 01:24:41:638 [AndroidDriver] Shutting down Android driver
+2019-05-03 01:24:41:641 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell am force-stop com.project.WhiteCoat'
+2019-05-03 01:24:42:346 [ADB] Pressing the HOME button
+2019-05-03 01:24:42:347 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell input keyevent 3'
+2019-05-03 01:24:43:004 [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+2019-05-03 01:24:43:007 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+2019-05-03 01:24:43:008 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+2019-05-03 01:24:43:008 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2019-05-03 01:24:43:009 [AndroidBootstrap] Received command result from bootstrap
+2019-05-03 01:24:43:010 [UiAutomator] Shutting down UiAutomator
+2019-05-03 01:24:43:011 [UiAutomator] Moving to state 'stopping'
+2019-05-03 01:24:43:013 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+2019-05-03 01:24:43:013 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2019-05-03 01:24:43:013 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+2019-05-03 01:24:43:014 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2019-05-03 01:24:43:014 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2019-05-03 01:24:43:015 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2019-05-03 01:24:43:015 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+2019-05-03 01:24:43:015 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2019-05-03 01:24:43:015 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+2019-05-03 01:24:43:016 [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+2019-05-03 01:24:43:016 [AndroidBootstrap] [UIAUTO STDOUT] Time: 38.633
+2019-05-03 01:24:43:016 [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+2019-05-03 01:24:43:017 [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2019-05-03 01:24:43:020 [UiAutomator] UiAutomator shut down normally
+2019-05-03 01:24:43:021 [UiAutomator] Moving to state 'stopped'
+2019-05-03 01:24:43:021 [ADB] Attempting to kill all uiautomator processes
+2019-05-03 01:24:43:022 [ADB] Getting IDs of all 'uiautomator' processes
+2019-05-03 01:24:43:022 [ADB] Using ps-based PID detection
+2019-05-03 01:24:43:022 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell ps'
+2019-05-03 01:24:43:138 [ADB] No 'uiautomator' process has been found
+2019-05-03 01:24:43:139 [UiAutomator] Moving to state 'stopped'
+2019-05-03 01:24:43:140 [Logcat] Stopping logcat capture
+2019-05-03 01:24:43:142 [ADB] Running '/home/terra/Android/Sdk/platform-tools/adb -P 5037 -s 9041f2e6 shell am force-stop io.appium.unlock'
+2019-05-03 01:24:43:712 [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+2019-05-03 01:24:43:712 [BaseDriver] Event 'quitSessionFinished' logged at 1556821483712 (01:24:43 GMT+0700 (Indochina Time))
+2019-05-03 01:24:43:713 [W3C (347846c4)] Received response: null
+2019-05-03 01:24:43:714 [W3C (347846c4)] But deleting session, so not returning
+2019-05-03 01:24:43:714 [W3C (347846c4)] Responding to client with driver.deleteSession() result: null
+2019-05-03 01:24:43:717 [HTTP] <-- DELETE /wd/hub/session/347846c4-9647-422e-b2e1-b9e2e339583d 200 2080 ms - 14
+2019-05-03 01:24:43:717 [HTTP] 
+2019-05-03 01:24:43:721 [Appium] Received SIGTERM - shutting down
